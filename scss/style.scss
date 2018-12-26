@@ -1,0 +1,42 @@
+$theme-colors:(
+  "primary": #0854a7
+);
+
+@import "bootstrap-4.1.3/scss/bootstrap";
+
+img.logo {
+  width: 30px;
+  height: 30px;
+}
+
+img.knowledge-icons {
+  width: 32px;
+  height: 32px;
+}
+
+span.contact {
+  font-size: 1.1em;
+}
+
+.card-header.knowledge {
+  color: $secondary; /* --secondary */
+}
+
+.card-body.rss {
+  padding: .8rem;
+}
+
+a.rss {
+  color: $light;
+  font-size: 1.25em;
+  &:hover {
+    color: $light;
+    text-decoration: none;
+   }
+}
+
+@include media-breakpoint-down(lg) {
+    .img-thumbnail {
+    	border: 1px solid $blue;
+    }
+}
